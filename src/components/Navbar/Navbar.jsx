@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { navbarData } from "./Data";
 import style from "./style.module.css";
 
@@ -25,8 +26,8 @@ export default function Navbar() {
           {navbarData.map((item) => {
             return (
               <li key={item.id}>
-                <a
-                  href={item.url}
+                <Link
+                  to={item.url}
                   className={
                     item.cName === "navLinks"
                       ? style.navLinks
@@ -35,7 +36,7 @@ export default function Navbar() {
                 >
                   <i className={item.icon}></i>
                   {item.title}
-                </a>
+                </Link>
               </li>
             );
           })}
