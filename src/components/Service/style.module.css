@@ -1,0 +1,18 @@
+.serviceContainer {
+    margin: 4rem 6rem;
+    text-align: start;
+}
+
+.serviceContainer h1 {
+    padding-bottom: 1rem;
+}
+
+.serviceContainer p {
+    padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 850px) {
+    .serviceContainer {
+        margin: 4rem 2rem;
+    }
+}
