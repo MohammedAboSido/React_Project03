@@ -1,5 +1,6 @@
 import React from "react";
 import contactImg from "../../assets/2.jpg";
+import Contact from "../../components/Contact/Contact";
 import Hero from "../../components/Hero/Hero";
 
 export default function ContactPage() {
@@ -11,6 +12,7 @@ export default function ContactPage() {
         title="Contact"
         btnClass="hide"
       />
+      <Contact />
     </>
   );
 }
